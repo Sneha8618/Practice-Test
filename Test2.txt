@@ -1,0 +1,249 @@
+1) JRE :(Java Runtime Environment) 
+*) It provides run time environmnent to the jvm to execute the byte code.
+*) It contains the jvm and set of libraries.
+
+JVM: (Java Virtual Machine)
+*) After coverting the source code into byte code, byte code or class file is input to the jvm.
+*) Jvm first loads the byte code
+*) It verifies the byte code
+*) Then it will interpreting the byte code using set of libraries.
+
+JDK : (Java Development Kit)
+*) The jdk contains jre, set of libraries and jvm.
+*) It will help us to execute the byte code.
+
+**************************************************************************************
+
+2) Class : It is a blue print or design, contains the states and behaviours.
+*) It will not exist in the real world.
+
+*****************************************************************************************
+
+Object : Object is a instance of a class.
+*) It will exist in the real world.
+*) It creats a multiple copies of a class.
+*) Object is created using a new keyword.
+
+Public : Everyone can access the program.
+
+Private : Only members of that class should access the program.
+
+Satic : 
+
+******************************************************************************************
+
+3) Array : Array is a collection of similar type of data in a single variable.
+Ex : int a[] = {1, 2, 3, 4};
+     String name[] = {"Sneha", "Anu", "Sahana", "Muskan"};
+	 
+*******************************************************************************************	 
+	 
+5) Datatypes : Representation of different values stored in a variable.	 
+Ex: int id = 123;
+    String name = "Sneha";
+	float percentage = 91.63f;
+    long contact_no = 8618461535L;
+    double price = 120000000;
+    char ch = 'A';
+    boolean pass = true;
+    short sl.no : 5;
+    byte bench_no = 14;
+
+*) There are two type of datatypes premitive and non-premitive.
+
+*) Premitive datatype : These names are start with lowercase letters.
+*) There are 8 premitive datatypes.
+short, byte, int, float, double, char, boolean, long
+
+*) Non-premitive : These names are start with uppercase letters.
+String, classname, System these are non-premitive data types.
+
+*******************************************************************************************
+
+6) Variable : It is a registered area allocated in the memory.
+*) There 4 types af varibales.
+*) static, local, instance, parameter.
+
+i)static : These varibales are declared inside the class and outside the main, using static keyword.
+Ex: static int age;
+
+ii)local : These variables are declared inside the class and inside the main.
+Ex : int age = 18;
+
+iii)instance : These variables are declared inside the class and outside the main, but cannat be declared as a static.
+Ex: int age;
+
+iv)parameter : Information inside the method is called as parameter.
+*) Parameters are declared inside the paranthesis.
+
+EX: public void add(int a, int b){
+}
+
+**************************************************************************************************
+
+7) Constructor : It is a special type of method, it is same name as the class name, with no return type.
+*) At the time of instance variable initialization we use construcor.
+*)Yes a class contains a multiple constructor
+*) There are two types of construcor - default and parameterized construcor.
+*) Parameterized construcors are used to initialize the instance variables.
+
+*)default constructor : 
+class Hotel{
+ 
+ int id;
+ String name;
+ String location;
+ long contact_no;
+ 
+ public Hotel(){
+    System.out.println("Hotel constructor is called");
+ }
+ 
+ public static void main(String args[]){
+    
+	Hotel hot = new Hotel();
+	hot.id = 123;
+	hot.name = "Prasad hotel";
+	hot.location = "Rajajinagar";
+	hot.contact_no = 6360905588L;
+	
+	System.out.println(hot.id + " "+ hot.name + " "+ hot.location + " "+ hot.contact_no);
+	
+ }
+
+}
+
+*)parameterized construcor:
+class Hotel{
+ 
+ int hotel_id;
+ String name;
+ String location;
+ long contact_no;
+ 
+ public Hotel(int id, String nm, String loc, long no ){
+    System.out.println("Hotel constructor is called");
+	hotel_id = id;
+	name =nm;
+	location = loc;
+	contact_no = no;
+ }
+ 
+ public static void main(String args[]){
+    
+	Hotel hot = new Hotel(123, "Prasad hotel", "Rajajinagr", 6360905588);
+	
+	System.out.println(hot.id + " "+ hot.name + " "+ hot.location + " "+ hot.contact_no);
+	
+ }
+
+}
+
+******************************************************************************
+
+4) 
+class CountNumbers{
+public static void main(String args[]){
+
+int number[] = {23, 45, 56, 67, 8, 12, 3, 5, 7, 9, 102, 34, 4, 5};
+    
+	//even numbers
+	System.out.println("Even numbers");
+   for(int i = 0; i < number.length; i++){
+    
+	 if(number[i] % 2 == 0){
+	   
+	   System.out.println(number[i]);
+	 }
+  
+  }
+  
+  //odd numbers
+  System.out.println("Odd numbers");
+  for(int i = 0; i < number.length; i++){
+   
+    if(number[i] % 2 != 0){
+	   
+	   System.out.println(number[i]);
+	}
+	
+ }
+  
+  System.out.println("length of array is" + number.length);
+  
+  }
+
+}
+
+******************************************************************************
+
+9 ) It gives the platform independent nature.
+*) It means java code run in any of the operating system like linux, windows.
+
+*******************************************************************************
+
+11) Default constructors are used to create an object.
+
+syntax:
+public ClassName(){
+
+}
+
+*******************************************************************************
+
+12) 
+class Reverse{
+
+ public static void main(String args[]){
+ 
+ int num = 1234;
+ int rev = 0;
+ 
+ while(num != 0){
+  
+   int rem = num % 10;
+   rev = (num * 10) + rem;
+   num = num / 10;
+ 
+ }
+  System.out.println(rev);
+ }
+}
+
+***********************************************************************
+
+8) Features of java:
+i) Secure : Java is more secure than other programing languages, thats why it is used for banking applocations.
+
+ii) Platform independent : Java code run in the any of the operating systems like windows and linux.
+*) It is having the property of write once and run anywhere thats why we have called it as platform independent.
+
+iii) Open source : Java is availbale in all the websites.
+
+iv) Portable : It is having largest portable feature because of its platform independent nature.
+
+***************************************************************************
+
+13) class Factorial{
+  
+   public static void main(String args[]){
+    int num = 10;
+	long factorial = 1;
+	for(int i=1; i<=num; ++i)
+	{
+	factorial *= i;
+	}
+	System.out.printf("Factorial of %d=%d",num,factorial);
+   
+   }
+}
+
+
+
+
+
+
+
+
+ 	
+	 
