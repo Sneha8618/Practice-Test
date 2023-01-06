@@ -1,0 +1,118 @@
+1) Minimum and Maximum value in an array 
+
+public class LargestAndSmallest {
+	
+	public static void main(String[] args) {
+		
+		int a[] = {45, 333, 76, 29, 900, 23, 474, 654, 29, 454};
+		
+		for(int i = 0; i < a.length; i++) {
+			
+			for(int j = i+1; j < a.length; j++) {
+				
+				if(a[i] > a[j]) {
+					int temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+			
+		}
+	System.out.println("smallest number : " + a[0] + " " + " Largest number : " + a[a.length-1]);
+
+	}
+}
+
+***************************************************************************
+
+2) Even or odd:
+
+public class EvenOrOdd{
+
+    public static void main(String[] args) {
+		
+		 Scanner sc = new Scanner(System.in);
+		 System.out.println("Enter a number");
+		 int petalNumber = sc.nextInt();
+		 
+		 if(petalNumber %2  == 0)
+		 {
+			 System.out.println("Both are in love");
+		 }
+		 else{
+			 System.out.println("They are not in love");
+         }
+
+     }
+}
+
+*****************************************************************
+
+6) Difference between ArrrayList and LinkedList
+
+ArrayList: 
+It internally call array function.
+ArrayList contains listIterator() method.
+Reading operation is easy.
+Upadate is very difficult in arraylist.
+
+
+LinkedList : 
+It internally call a node.
+LinkedList does not contain listIterator() .
+Reading opration is difficult.
+Update is easy in linkedlist.
+
+*******************************************************************
+
+3) Specialized classes : Theses are reffered as subclasses.
+subclasses can acquired the proprties of supercalss explicitly.
+
+Generalized classes are reffered as superclasses in java.
+Superclasses can aquired the properties implicitly.
+
+******************************************************************
+
+7) Difference between listIterator and iterator.
+
+listIterator() : 
+It is used to acces the collection values in both forward and backward direction.
+It is available in list.
+
+iterator() : It is used to acceess the collection values only in forward direction.
+It is available in collection.
+
+*******************************************************************
+
+4) a) I make my superclass method as private, then this method and class should not be inherited by any other class. 
+
+b) The final class is a class that is declared with a final keyword
+Subclasses cannot inherir the final classes or a final class canot be inherited by any subclass, so we can restrict classes inheritance by making use of final class.
+
+**********************************************************************
+
+5) Sorted collection means sorrted() method in collection.
+sorted() method can be performed by using compareTo() method and Comparator.
+It sort the values in ascending and descending order.
+
+**************************************************************************
+
+10) Static polymorphism means it is a compile time polymorphism.
+It can achieved by performing method overloading.
+Method overloading means two or more methods declared more than once with in the same class with same method name but differ in there parameter list is called as method overloading.
+
+Dynamic polkymorphism means it is a run-time pokymorphism.
+It can be achieved by performing method overrideing.
+Method overriding means two classes have the same method signature but different in their implementation called method overriding.
+
+*******************************************************************************
+
+11) Hema created one class called PersonalInformation. She perfoms Encapsulation operation, then the proprties are private and secure. 
+Other class members should not be accessed these properties.
+
+********************************************************************************
+
+
+
+
+
