@@ -1,0 +1,143 @@
+1) Collection Hierarchy:
+
+Iterable(java.lang) -> Collection(java.util) -> List -> ArrayList, linkedList
+                        set -> HashSet, LinkedHashSet
+						SortedSet -> TreeSet
+						Queue
+					
+*) Iterable it is available in the java.lang package
+-> It is an ninterface.
+
+*) Collection extends the iterable.
+-> Collection is an interface, it is available in the java.util package.
+-> It support only non-premitive datatypes.
+-> It contains group of objects.
+-> To overcome the limitations of array we use collection.
+-> It performs sorting, manipulating, and deletion opertaions.
+
+*) List is also an interface , it extens the collection interface.
+-> It is index based.
+-> It contains the listIterator() method to access the collection values.
+-> It is posotional access.
+-> It contains the duplicate values.
+-> It is an insertion order.
+
+*)Set is an interface, it extends the collection interface.
+-> It is non-index based.
+-> It contains only unique values.
+-> It is non-positional access.
+-> It does not contains list iterator method.
+
+*) Sorted set is an interfce, it extends the collection interface.
+-> It arrranges the values in ascending order.
+
+*) ArrayList is a class, it implements the list interface.
+-> It internally calls an array.
+
+*) Linked list is a class, it extends the list interface.
+-> It internaly calls node.
+
+------------------------------------------------------------------------------------
+
+2) Map hierarchy :
+
+Map -> Hashmap, Treemap, LinkedHashMap, HashTable
+
+*) Map is an interface , it is availbale in the java.util package.
+-> It contains the dictionary of keys and value pairs.
+-> Keys are unique and values are duplicate.
+-> Add the keys and values in the map we use put method.
+-> To acces the key and values in 3 ways.
+-> First we can access only keys using keySet() method and it returns the Set interface.
+-> We can also access only values using values() methos, it returns the Collection interface.
+-> We can also both key and values at time using entrySet() method  and it will returns the Set interface.
+
+* ) It is a class, it implements the map interface.
+-> It arranges the vales in ascending order.
+
+------------------------------------------------------------------------------------------
+
+11) We can put @Bean above the methods in a configuration class.
+-> It will create an object and give the ref of an object.
+-> We can use @Bean in .class files.
+
+-------------------------------------------------------------------------------------
+
+13) String buffer and String builder :
+
+String buffer :
+-> It is a class, it is availbale in the java.lang package.
+-> It is immutable in nature.
+-> It means we can modify the content of an object.
+-> It is slower than the string builder.
+-> Read opertaion is easier in buffer.
+-> Updating values in string buffer is difficult.
+-> It takes more time.
+-> It works one after another.
+
+String builder :
+-> It is a class.
+-> It is immutable in nature.
+-> It is faster.
+-> It takes less time.
+-> Read opertaion difficult.
+-> Updating values in string builder in easier
+-> It takes less time.
+-> It works at a time.
+
+-----------------------------------------------------------------------------------------
+
+17)
+i) Maven : 
+-> It is a powerfull project management tool that is based on POM(project object model).
+-> It is used for projects build, dependency and documentation.
+
+ii) Gradle : It is a build automation tool known for its flexibility to build software.
+-> The building process includes compiling, linking, and packaging the code.
+---------------------------------------------------------------------------------------
+
+20) 
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class RemoveFirstAndLast {
+
+   public static void main(String args[]){}
+	
+	LinkedList<String> list = new LinkedList();
+	list.add("Red");
+	list.add("Black");
+	list.add("Blue");
+	list.add("Brown");
+	list.add("Yellow");
+	
+	System.out.println(list.removeFirst());
+	System.out.println(list.removeLast());
+	
+	
+ 
+------------------------------------------------------------------------------
+
+9) Core is the core of the framework that power features such as Inversion of Control and dependency injection.
+-> Beans provides BeanFactory, which is sophisticated implementation of the factory pattern.
+
+--------------------------------------------------------------------------------------
+
+10) Dependency injection is a design pattern in which an object or function recieves other objects or functions that it depends on.
+-> A form of inversion of control, dependency injection iams to seperate the concerns of constructing objects and 
+using them, leading to loosely coupled programs.
+
+-----------------------------------------------------------------------------------
+
+4) It indicates the implementation of hashCode() is native because there is not any direct method in java to fetch the reference of the object.
+-> An object hashcode value can change in multple executions of the same application.
+-> If two o bjects are unequal according to equals() method, their hash code are not required to be different.
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
